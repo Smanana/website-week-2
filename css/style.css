@@ -1,0 +1,218 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.background{
+	
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/allbikes-1539286251.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	overflow-y: auto;
+	
+}
+
+.navigation{
+	
+	width: 350px;
+	height:auto;
+	position: absolute;
+	top: 20%;
+	left: 0;
+	
+}
+
+.navigation a{
+	text-decoration: none;
+	font-size: 26px;
+	font-family: Lucida Console;
+	font-weight: bold;
+	width: 70%;
+	height: 60px;
+	margin: 6px;
+	float: left;
+	display; inline-block;
+	color: white;
+	line-height: 70px;
+	text-align: center;
+	transition: 300ms;
+	background-color: rgba(0,0,0);
+	
+}
+a.active, .navigation a:hover{
+	background-color: skyblue;
+	color: white;
+	width: 70%;
+	
+}
+
+.content{
+	position: absolute;
+	width:930px;
+	min-height:500px;
+	height: auto;
+	right: 5%;
+	top: 10%;
+}
+
+.home{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color: white;
+	font-family: Lucida Console;
+}
+
+.home h1{
+	font-size: 75px;
+	padding-right: 10px;
+	border-bottom: 7px solid white;
+	text-transform: uppercase;
+	font-family: Comic Sans MS;
+	
+}
+
+.home h3{
+	font-size: 28px;
+	padding: 5px 0;
+	capacity: 0.6;
+}
+
+.about{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 30px;
+	color: white;
+	font-family: Comic Sans MS;
+	padding: 60px 60px;
+	display: none;
+	
+	min-height: 20px;
+}
+
+.about p{
+	font-size: 24px;
+	line-height: 28px;
+	margin-bottom: 15px;
+	font-family: Comic Sans MS;
+	/*background-color: skyblue;*/
+	/*border: 3px solid skyblue;*/
+	background-color: black;
+}
+
+.about p:hover{
+	background-color: rgba(135, 206, 235);
+	color: white;
+	width: 100%;
+	cursor: pointer;
+
+}
+
+.gallery{
+	width: 1000px;
+	margin: 0px auto 0;
+	display: none;
+	flex-decoration: row;
+	flex-wrap: wrap;
+	font-family: Comic Sans MS;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	top: 0;
+
+}
+
+.gallery .image{
+	position: relative;
+	width: 300px;
+	max-height: 300px;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.gallery .image {
+	position: relative;
+}
+
+.gallery .image img{
+	max-width: 100%;
+	max-height: 1000px;
+	transition: transform 20ms;
+	width: 100%;
+}
+
+.image img:hover{
+	
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	background-color: rgba(135,206,235,0.7);
+}
+
+.contact{
+	
+	position: absolute;
+	left: 500px;
+	top: 50px;
+	color: white;
+	padding:  80px;
+	display: none;
+	
+}
+
+.text{
+	
+	width: 55%;
+	height: 65px;
+	border: 3px solid skyblue;
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 20px;
+	padding: 0 10px;
+	float: left;
+	font-family: Comic Sans MS;
+}
+
+.message{
+	
+	width: 55%;
+	height: 65px;
+	border:3px solid skyblue;
+	color: white;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 20px;
+	padding: 0 8px;
+	float: left;
+	font-family: Comic Sans MS;
+	
+}
+
+.submit{
+	
+	width: 160px;
+	height: 65px;
+	font-family: Comic Sans MS;
+	background-color: skyblue ;
+	border:3px solid skyblue;
+	font-size:20px;
+	font-weight: bold;
+	clear: both;
+	margin-top: 25px;
+	color: white;
+	font-size: 20px;
+	padding: 0 10px;
+	float: left;
+	cursor: pointer;
+	
+}

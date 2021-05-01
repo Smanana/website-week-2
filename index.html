@@ -1,0 +1,157 @@
+<DOCTYPE>
+
+<html>
+	
+	<head>
+		<title>The Bike Store</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+	<div class="background">
+		
+	<div class="navigation">
+		<a class="a active" href="#">HOME</a>
+		<a class="b" href="#">ABOUT</a>
+		<a class="c" href="#">GALLERY</a>
+		<a class="d" href="#">CONTACT</a>
+	</div>
+	
+	<div class="content">
+		<div class="home">
+			<h1>I am Lance Lion</h1>
+			<h3>BMX Rider, Bike Repairer, Bike Seller</h3>
+		</div>	
+
+	
+	<div class="about">
+		<p>Hello Friends
+		<br>
+		<br>
+			Thank you for visiting my page, You will get to explore so much with
+			regards to biking.So if you got love for bikes, you in the right place.
+			I own a store that sells and repairs bike which is doing very well.During
+			my spare time i do a  lot of BMX riding and I love adventure. Please do 
+			enjoy while you explore my page.
+			<br>
+			<br>
+			</p>
+			<br>
+			<br>
+	</div>	
+	
+			
+		<div class="gallery">
+			<h1>THIS IS MY GALLERY</h1>
+			<br>
+		
+			<div class="image">
+				<img src="images/download.jpg"/>
+			</div>
+			
+			<div class="image">
+				<img src="images/81W065z6egL._SL1500_.jpg"/>
+			</div>
+			
+			<div class="image">
+				<img src="images/yellow-er-mountain-bike-isolated-white-background-69210045.jpg"/>
+			</div>
+			
+			
+			<div class="image">
+				<img src="images/2_DIAMOND_BLACK_1_1024x1024.jpg"/>
+			</div>
+			
+			<div class="image">
+				<img src="images/81eL463JX5L._SL1500_.jpg">
+			</div>
+			
+			<div class="image">
+				<img src="images/modern-bicycle.jpg"/>
+			</div>
+			
+			<div class="image">
+				<img src="images/81mjqbUkX4L._SX425_.jpg"/>
+			</div>
+						
+		</div>
+	
+	</div>
+	<!--contact page-->
+		<div class="contact">
+			<div class="contactform">
+				<form action="" method="post">
+			
+					<input type="text" name="" class="text" value="First Name">
+					<input type="text" name="" class="text" value="Last Name">
+					<input type="text" name="" class="text" value="Your Email">
+					<textarea cols="4"  class="message"> Your Message....</textarea>
+					<input type="button" name="" class="submit" value="Submit">
+				</form>
+			
+		
+	<!--submit button-->
+		<div class="button">
+			<a class="e" href="#"></a>
+	
+	<!---linking the jquery script file--->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('a').click(function(){
+				var selected = $(this);
+				$('a').removeClass('active');
+				$(selected).addClass('active');
+				
+			
+			});
+			
+			var $a=$('.a'),
+			$b=$('.b'),
+			$c=$('.c'),
+			$d=$('.d'),
+			$home=$('.home'),
+			$about=$('.about'),
+			$gallery=$('.gallery'),
+			$contact=$('.contact')
+			
+			$a.click(function(){
+				$home.fadeIn();
+				$about.fadeOut();
+				$gallery.fadeOut();
+				$contact.fadeOut();
+			});
+			
+			$b.click(function(){
+			$about.fadeIn();
+			$home.fadeOut();
+			$gallery.fadeOut();
+			$contact.fadeOut();
+			});
+			
+			$c.click(function(){
+			$gallery.fadeIn();
+			$home.fadeOut();
+			$about.fadeOut();
+			$contact.fadeOut();
+			});
+			$d.click(function(){
+			$contact.fadeIn();
+			$home.fadeOut();
+			$about.fadeOut();
+			$gallery.fadeOut();
+			});
+			$e.click(function(){
+			$submit.fadeIn();
+			$home.fadeOut();
+			$about.fadeOut();
+			$gallery.fadeOut();
+			$contact.contact();
+			});
+		});
+	
+	</script>
+	</div>
+	</body>
+
+</html>
